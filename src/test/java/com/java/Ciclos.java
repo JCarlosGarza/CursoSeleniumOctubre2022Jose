@@ -8,7 +8,7 @@ public class Ciclos {
 
         // contador del 1-10
         int numero = 1;
-        while (numero <= 10) {
+        while(numero<=10) {
             System.out.println(numero);
             numero++;
         }
@@ -30,8 +30,8 @@ public class Ciclos {
         for (int i = 1; i <= numero; i++) {
             System.out.println("El numero es: " + i);
         }
-
-        // Actividad
-        // Contador 10 - 1
     }
+
+    // Actividad
+    // Contador 10 - 1
 }

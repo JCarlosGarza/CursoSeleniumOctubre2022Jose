@@ -1,7 +1,7 @@
 package com.java;
 
-public class Condicionales
-{
+public class Condicionales {
+
     public static void main(String[] args) {
         // if
         // if else
@@ -10,37 +10,37 @@ public class Condicionales
         // switch
 
         // Variables
-        int limiteVelocidad = 80; // km/h
+        int limiteDeVelocidad = 80; // km/hr
         int velocidadActual = 100;
         boolean isCarretera = false;
 
         if (isCarretera == true) {
-            limiteVelocidad = 120;
-            if (velocidadActual > limiteVelocidad) {
+            limiteDeVelocidad = 120;
+            if (velocidadActual > limiteDeVelocidad) {
                 System.out.println("Vas a exceso de velocidad");
             }
             else {
-                System.out.println("Vas dentro del límite de velocidad");
+                System.out.println("Vas dentro del limite de velocidad");
             }
         }
-        else if (velocidadActual > limiteVelocidad) {
+        else if(velocidadActual > limiteDeVelocidad) {
             System.out.println("Vas a exceso de velocidad");
         }
         else {
-            System.out.println("Vas dentro del límite de velocidad");
+            System.out.println("Vas dentro del limite de velocidad");
         }
 
-        String iniciales = "JG";
+        String iniciales = "RS";
 
-        switch (iniciales) {
-            case "JG":
-                System.out.println("Jose Garza");
+        switch(iniciales) {
+            case "EA":
+                System.out.println("Ernesto Anaya");
                 break;
             case "VM":
                 System.out.println("Victor Martinez");
                 break;
-            case "EA":
-                System.out.println("Ernesto Anaya");
+            case "JG":
+                System.out.println("Jose Garza");
                 break;
             default:
                 System.out.println("Desconocido");
