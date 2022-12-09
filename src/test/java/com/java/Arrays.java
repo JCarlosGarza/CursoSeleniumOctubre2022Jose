@@ -26,7 +26,7 @@ public class Arrays {
         nombres[0][3] = "Jose";
         nombres[1][0] = "Ernesto";
 
-        System.out.println("Mi nombre es: " + nombres[1][0]);
+        System.out.println("Mi nombre es: " + nombres[0][3]);
 
         // Actividad: Crear un arreglo unidimensional (como objeto) de 4 posiciones:
         // 1- First Name
@@ -34,6 +34,8 @@ public class Arrays {
         // 3- Age
         // 4- Email
         // Imprimir el arreglo concatenando cada uno de los valores
-    }
 
+        Object[] uniArray = { "Jose", "Garza", 23, "2", "jose.garza@perficient.com"};
+        System.out.println("First Name: " + uniArray[0] + " \n Last Name: " + uniArray[1] + " \n Age: " + uniArray[2] + " \n Email: " + uniArray[3]);
+    }
 }

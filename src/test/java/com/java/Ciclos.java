@@ -30,8 +30,12 @@ public class Ciclos {
         for (int i = 1; i <= numero; i++) {
             System.out.println("El numero es: " + i);
         }
-    }
 
-    // Actividad
-    // Contador 10 - 1
+        // Actividad
+        // Contador 10 - 1
+        numero = 1;
+        for (int i = 10; i >= numero; i--) {
+            System.out.println("El numero en retroceso es: " + i);
+        }
+    }
 }
