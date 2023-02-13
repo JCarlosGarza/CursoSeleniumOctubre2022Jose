@@ -13,24 +13,14 @@ public class Condicionales {
         int limiteDeVelocidad = 80; // km/hr
         int velocidadActual = 100;
         boolean isCarretera = false;
-        boolean isZonaEscolar = true;
 
         if (isCarretera == true) {
             limiteDeVelocidad = 120;
             if (velocidadActual > limiteDeVelocidad) {
-                System.out.println("Vas a exceso de velocidad en carretera");
+                System.out.println("Vas a exceso de velocidad");
             }
             else {
-                System.out.println("Vas dentro del limite de velocidad en carretera");
-            }
-        }
-        else if(isZonaEscolar) {
-            limiteDeVelocidad = 30;
-            if (velocidadActual > limiteDeVelocidad) {
-                System.out.println("Vas a exceso de velocidad en zona escolar");
-            }
-            else {
-                System.out.println("Vas dentro del limite de velocidad en zona escolar");
+                System.out.println("Vas dentro del limite de velocidad");
             }
         }
         else if(velocidadActual > limiteDeVelocidad) {
@@ -56,14 +46,9 @@ public class Condicionales {
                 System.out.println("Desconocido");
                 break;
         }
-
-        // Actividades
-        // Cambiar el tipo de la variable int por double
-        // Agregar la condicional de zona escolar
-
-        double limiteNuevo = (double)limiteDeVelocidad; // km/hr
-        double velocidadNueva = (double)velocidadActual; // km/hr
-
-        System.out.println("limiteNuevo: " + limiteNuevo + " velocidadNueva: " + velocidadNueva);// Tedious string concatenation.
     }
+
+    // Actividades
+    // Cambiar el tipo de la variable int por double
+    // Agregar la condicional de zona escolar
 }

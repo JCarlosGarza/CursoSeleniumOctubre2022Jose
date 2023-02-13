@@ -17,28 +17,12 @@ public class Main {
         coche1.encender();
         coche1.acelerar();
 
-        Motocicleta motocicleta1 = new Motocicleta();
-        motocicleta1.encender();
-        motocicleta1.acelerar();
-
         // Actividad
         // Crear una clase que se llama Moto y vamos a crear 3 diferentes tipos de motos con estados y comportamientos
 
-        Moto moto1 = new Moto();
-        moto1.setColor("rojo");
-        moto1.setMarca("marca1");
-        moto1.setMotor("motor1");
+        Motocicleta moto1 = new Motocicleta();
         moto1.encender();
-        Moto moto2 = new Moto();
-        moto2.setColor("azul");
-        moto2.setLlantas(3);
-        moto2.encender();
-        moto2.acelerar();
-        Moto moto3 = new Moto();
-        moto3.setColor("verde");
-        moto3.setAsientos(2);
-        moto3.frenar();
+        moto1.acelerar();
 
-        System.out.println("Moto1 color: " + moto1.getColor() + "\n Moto2 llantas:" +  moto2.getLlantas() + "\n Moto3 asientos: " + moto3.getAsientos());
     }
 }

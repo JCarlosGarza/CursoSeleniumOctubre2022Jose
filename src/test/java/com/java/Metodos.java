@@ -19,8 +19,6 @@ public class Metodos {
 
         System.out.println("La suma es: " + suma(5,10) );
         hello();
-
-        imprimeNumeros();
     }
 
     // Metodo
@@ -35,10 +33,4 @@ public class Metodos {
 
     // Actividad
     // Crear un metodo que imprima mas de dos numeros y que sea de tipo void
-
-    public static void imprimeNumeros() {
-        System.out.println("Núm 1: " + 4 + "\n");
-        System.out.println("Núm 2: " + 5 + "\n");
-        System.out.println("Núm 3: " + 6 + "\n");
-    }
 }

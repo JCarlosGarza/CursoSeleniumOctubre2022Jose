@@ -3,13 +3,13 @@ package com.java;
 public class Variables {
 
     public static void main(String[] args) {
-        // Fases de una variable
+       // Fases de una variable
 
-        // 1- Declaracion
-        // 2- Inicializacion
-        // 3- Utilizacion
+       // 1- Declaracion
+       // 2- Inicializacion
+       // 3- Utilizacion
 
-        int x = 1;
+       int x = 1;
 
         System.out.println(x);
 
