@@ -1,0 +1,11 @@
+{
+  "proyectoFinal": {
+    "username": "Admin",
+    "password": "admin123",
+    "expectedLoggedInTitle": "Dashboard",
+    "employeeName": "Cecil  Bonaparte",
+    "newUsername": "Aqua123",
+    "newPassword": "Ardilla123!",
+    "urlToSearch": "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers"
+  }
+}

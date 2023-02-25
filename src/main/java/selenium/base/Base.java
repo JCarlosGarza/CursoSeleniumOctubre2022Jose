@@ -1,6 +1,7 @@
 package selenium.base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.openqa.selenium.By;
@@ -10,10 +11,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 
 import javax.imageio.ImageIO;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -72,16 +75,25 @@ public class Base {
         wait.until(ExpectedConditions.visibilityOfElementLocated(element));
     }
 
+    public boolean verifyVisibilityOfElementWithValue(By element) {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(element)) != null;
+    }
+
     public void verifyTitleContains(String title) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.titleContains(title));
+    }
+
+    public void verifyURLContains(String title) {
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.urlContains(title));
     }
 
     /**
      * Type
      */
     public void type(String text, By element) {
-
         driver.findElement(element).sendKeys(text);
     }
 
